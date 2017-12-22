@@ -3,6 +3,7 @@ package com.sdepta.filmwebmoviepicker.model;
 public class Movie {
     private String title;
     private String href;
+    private int howMuchWannaSee;
 
     public String getTitle() {
         return title;
@@ -11,8 +12,6 @@ public class Movie {
     public int getHowMuchWannaSee() {
         return howMuchWannaSee;
     }
-
-    private int howMuchWannaSee;
 
     public Movie(String title, String href, int howMuchWannaSee) {
         this.title = title;

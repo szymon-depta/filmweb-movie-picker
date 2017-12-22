@@ -29,9 +29,9 @@ public class FilmwebMoviePickerApplication {
 			result.append(movie.toString()).append("<br/>");
 		}
 
-		WeightedRandom.getWeightedRandom(movies, m -> m.getHowMuchWannaSee());
+		final Movie chosenMovie = WeightedRandom.getWeightedRandom(movies, m -> m.getHowMuchWannaSee());
 
-		return result.toString();
+		return chosenMovie.toString();
 	}
 
 	public static void main(String[] args) {
